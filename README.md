@@ -32,45 +32,13 @@ src/
     organisms/           # SalesChart (Bar/Line), SalesPie, KPI row
   templates/DashboardTemplate.tsx
 ```
+## Features
+- Sales data visualization (2022–2024)
+- Bar, Line, Pie charts
+- Custom sales threshold filter
+- Modular component structure
+- Dashboard route
 
-## Getting started
-
-> Requirements: Node.js 18+ and npm (or pnpm/yarn)
-
-```bash
-# 1) Install deps
-npm install
-
-# 2) Run dev server
-npm run dev
-# Visit http://localhost:3000
-```
-
-## Using your own/real API later
-
-Replace `app/api/sales/route.ts` with a fetch to your backend or a public data API. Keep the returned shape:
-
-```ts
-{
-  year: number,
-  monthly: { month: string; revenue: number }[],
-  byCategory: { name: string; value: number }[],
-  totals: { revenue: number; orders: number; avgOrderValue: number }
-}
-```
-
-## GitHub – create a repo and push
-
-```bash
-# From project root
-git init
-git add .
-git commit -m "feat: initial atomic sales dashboard"
-# Create a new GitHub repo in your account, then:
-git remote add origin https://github.com/<your-username>/atomic-sales-dashboard.git
-git branch -M main
-git push -u origin main
-```
 
 ## Notes
 
@@ -80,5 +48,3 @@ git push -u origin main
 
 ## License
 MIT
-
-> If your registry doesn't have Next.js 15 yet, temporarily set `next` and `eslint-config-next` to `^14` in `package.json`, install, then bump back later.
